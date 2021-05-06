@@ -31,6 +31,7 @@ brew cask install github
 brew cask install mongodb-compass
 
 # General Purpose Apps
+brew cask install whatsapp
 brew cask install telegram
 brew cask install slack
 brew cask install tandem
