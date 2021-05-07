@@ -21,22 +21,24 @@ echo "Make sure to edit .zshrc with t"
 # Applications
 
 # Dev Apps
-brew cask install webstorm
-brew cask install pycharm
-brew cask install postman
-brew cask install atom
-brew cask install sublime-text
-brew cask install ngrok
-brew cask install github
-brew cask install mongodb-compass
+brew install --cask webstorm
+brew install --cask pycharm
+brew install --cask postman
+brew install --cask atom
+brew install --cask sublime-text
+brew install --cask ngrok
+brew install --cask github
+brew install --cask mongodb-compass
+brew list | grep mongodb-database-tools
+
 
 # General Purpose Apps
-brew cask install whatsapp
-brew cask install telegram
-brew cask install slack
-brew cask install tandem
-brew cask install zoom
-brew cask install notion
+brew install --cask whatsapp
+brew install --cask telegram
+brew install --cask slack
+brew install --cask tandem
+brew install --cask zoom
+brew install --cask notion
 
 #Development
 
