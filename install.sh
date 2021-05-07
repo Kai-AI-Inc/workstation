@@ -28,8 +28,11 @@ brew install --cask atom
 brew install --cask sublime-text
 brew install --cask ngrok
 brew install --cask github
+
+#Mongo
 brew install --cask mongodb-compass
-brew list | grep mongodb-database-tools
+brew tap mongodb/brew
+brew install mongodb-database-tools
 
 
 # General Purpose Apps
