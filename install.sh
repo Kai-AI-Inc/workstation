@@ -28,6 +28,7 @@ brew install --cask atom
 brew install --cask sublime-text
 brew install --cask ngrok
 brew install --cask github
+brew tap heroku/brew && brew install heroku
 
 #Mongo
 brew install --cask mongodb-compass
