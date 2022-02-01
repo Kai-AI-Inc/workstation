@@ -40,7 +40,6 @@ brew install mongodb-database-tools
 brew install --cask whatsapp
 brew install --cask telegram
 brew install --cask slack
-brew install --cask tandem
 brew install --cask zoom
 brew install --cask notion
 
