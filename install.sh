@@ -47,18 +47,17 @@ if [ -z "${GIT_USER_NAME}" ] || [ -z "${GIT_EMAIL}" ] || [ -z "${GITHUB_PACKAGES
 fi
 
 arrayContains (){
-        declare -a array=("${!1}")
-        local match=$2
+  declare -a array=("${!1}")
+  local match=$2
 
-        for item in "${array[@]}"
-        do
-                echo "$item $match"
-                if [[ "$item" == "$match" ]]; then
-                        return 1
-                fi
-        done
+  for item in "${array[@]}"
+  do
+    if [[ "$item" == "$match" ]]; then
+      return 1
+    fi
+  done
 
-        return 0
+  return 0
 }
 
 install (){
@@ -89,6 +88,7 @@ echo "Make sure to edit .zshrc with t"
 
 # Applications
 brew install --cask notion
+install iterm --cask
 
 # Dev Apps
 brew install --cask webstorm
