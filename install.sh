@@ -126,6 +126,16 @@ brew install --cask docker
 git config --global user.name "$GIT_USER_NAME"
 git config --global user.email "$GIT_EMAIL"
 
+# P4merge
+brew install --cask p4v
+git config --global merge.tool p4mergetool
+git config --global mergetool.p4mergetool.cmd 
+git config --global mergetool.p4mergetool.cmd "/Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\""
+git config --global mergetool.p4mergetool.trustExitCode false
+git config --global mergetool.keepBackup false
+git config --global diff.tool p4mergetool
+git config --global difftool.p4mergetool.cmd "/Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\""
+
 #github
 install gh
 
