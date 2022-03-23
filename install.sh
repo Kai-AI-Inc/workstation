@@ -96,7 +96,10 @@ brew install --cask pycharm
 brew install --cask postman
 brew install --cask ngrok
 install github --cask
+
+# Cloud CLIs
 brew tap heroku/brew && brew install heroku
+brew install awscli
 
 # Text editors
 install atom --cask
