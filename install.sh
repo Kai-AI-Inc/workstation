@@ -165,3 +165,6 @@ export NVM_DIR=\"$HOME/.nvm\"
 
 # Folders
 mkdir ~/dev
+
+# Rosseta
+softwareupdate --install-rosetta
