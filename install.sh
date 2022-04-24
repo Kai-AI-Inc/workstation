@@ -38,7 +38,7 @@ set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
 usage (){
   echo "Usage: ./workstation.sh -u|--git-user-name <YOUR-GIT-USER-NAME> -e|--git-email <YOUR-GIT-EMAIL> -t|--github-packages-token <GITHUB-PACKAGES-TOKEN> [-x|--exclude <comma separated string for apps that will not be installed>]"
   echo "Usage: Github packages token can be fetched from: github.com => settings => developer settings => personal access tokens"
-  echo "Usage: Available excludes: whatsapp,telegram,visual-studio-code,github,gh"
+  echo "Usage: Available excludes: whatsapp,telegram,visual-studio-code,github,gh,datagrip"
 }
 
 if [ -z "${GIT_USER_NAME}" ] || [ -z "${GIT_EMAIL}" ] || [ -z "${GITHUB_PACKAGES_TOKEN}" ]; then
@@ -95,6 +95,7 @@ brew install --cask webstorm
 brew install --cask pycharm
 brew install --cask postman
 brew install --cask ngrok
+install datagrip --cask
 install github --cask
 
 # Cloud CLIs
