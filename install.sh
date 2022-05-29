@@ -38,7 +38,7 @@ set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
 usage (){
   echo "Usage: ./install.sh -u|--git-user-name <YOUR-GIT-USER-NAME> -e|--git-email <YOUR-GIT-EMAIL> -t|--github-packages-token <GITHUB-PACKAGES-TOKEN> [-x|--exclude <comma separated string for apps that will not be installed>]"
   echo "Usage: Github packages token can be fetched from: github.com => settings => developer settings => personal access tokens"
-  echo "Usage: Available excludes: whatsapp,telegram,visual-studio-code,github,gh,datagrip,atom,iterm2"
+  echo "Usage: Available excludes: whatsapp,discord,telegram,visual-studio-code,github,gh,datagrip,atom,iterm2"
 }
 
 if [ -z "${GIT_USER_NAME}" ] || [ -z "${GIT_EMAIL}" ] || [ -z "${GITHUB_PACKAGES_TOKEN}" ]; then
@@ -111,6 +111,7 @@ install visual-studio-code --cask
 # Communication
 install whatsapp --cask
 install telegram --cask
+install discord --cask
 brew install --cask slack
 brew install --cask zoom
 
