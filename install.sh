@@ -119,6 +119,7 @@ brew install --cask zoom
 brew install --cask mongodb-compass
 brew tap mongodb/brew
 brew install mongodb-database-tools
+brew install mongodb-atlas-cli
 
 # Node
 brew install nvm
