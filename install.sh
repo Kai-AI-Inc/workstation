@@ -102,6 +102,7 @@ install github --cask
 # Cloud CLIs
 brew tap heroku/brew && brew install heroku
 brew install awscli
+brew install --cask session-manager-plugin
 
 # Text editors
 install atom --cask
