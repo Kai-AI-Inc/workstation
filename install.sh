@@ -173,3 +173,6 @@ mkdir ~/dev
 
 # Rosseta
 softwareupdate --install-rosetta
+
+# Shell
+echo "setopt HIST_IGNORE_SPACE" >> ~/.zshrc
