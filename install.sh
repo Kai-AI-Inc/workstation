@@ -151,6 +151,12 @@ install gh
 # SSH
 ssh-keygen -t rsa -b 4096 -C "$GIT_EMAIL"
 
+# Mobile
+brew install cocoapods
+brew install fastlane
+brew install gradle
+brew install --cask android-studio
+
 #Configurations
 # echo "prompt_context() {
 #   if [[ \"\$USER\" != \"\$DEFAULT_USER\" || -n \"\$SSH_CLIENT\" ]]; then
@@ -175,4 +181,7 @@ mkdir ~/dev
 softwareupdate --install-rosetta
 
 # Shell
+echo "jdk_home=$(brew --prefix openjdk)" >> ~/.zshrc
+echo "export JAVA_HOME=$jdk_home" >> ~/.zshrc
+echo "export PATH=$JAVA_HOME/bin:$PATH" >> ~/.zshrc
 echo "setopt HIST_IGNORE_SPACE" >> ~/.zshrc
