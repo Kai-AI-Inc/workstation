@@ -138,7 +138,7 @@ git config --global user.email "$GIT_EMAIL"
 # P4merge
 brew install --cask p4v
 git config --global merge.tool p4mergetool
-git config --global mergetool.p4mergetool.cmd 
+git config --global mergetool.p4mergetool.cmd
 git config --global mergetool.p4mergetool.cmd '/Applications/p4merge.app/Contents/MacOS/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"'
 git config --global mergetool.p4mergetool.trustExitCode false
 git config --global mergetool.keepBackup false
@@ -154,7 +154,7 @@ ssh-keygen -t rsa -b 4096 -C "$GIT_EMAIL"
 # Mobile
 brew install cocoapods
 brew install fastlane
-brew install gradle
+brew install openjdk@17
 brew install --cask android-studio
 
 #Configurations
@@ -181,7 +181,6 @@ mkdir ~/dev
 softwareupdate --install-rosetta
 
 # Shell
-echo "jdk_home=$(brew --prefix openjdk)" >> ~/.zshrc
-echo "export JAVA_HOME=$jdk_home" >> ~/.zshrc
+echo "export JAVA_HOME=/opt/homebrew/opt/openjdk@17" >> ~/.zshrc
 echo "export PATH=$JAVA_HOME/bin:$PATH" >> ~/.zshrc
 echo "setopt HIST_IGNORE_SPACE" >> ~/.zshrc
