@@ -157,7 +157,6 @@ brew install fastlane
 brew install openjdk@17
 brew install --cask android-studio
 echo "export ANDROID_HOME=$HOME/Library/Android/sdk" >> ~/.zshrc
-echo "export ANDROID_SDK_HOME=$HOME/Library/Android/sdk" >> ~/.zshrc
 echo "export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH" >> ~/.zshrc
 
 #Configurations
