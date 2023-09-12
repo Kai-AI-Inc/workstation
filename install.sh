@@ -182,5 +182,5 @@ softwareupdate --install-rosetta
 
 # Shell
 echo "export JAVA_HOME=/opt/homebrew/opt/openjdk@17" >> ~/.zshrc
-echo "export PATH=$JAVA_HOME/bin:$PATH" >> ~/.zshrc
+echo "export PATH=$JAVA_HOME/bin:$HOME/Library/Android/sdk/platform-tools:$PATH" >> ~/.zshrc
 echo "setopt HIST_IGNORE_SPACE" >> ~/.zshrc
