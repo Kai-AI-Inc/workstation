@@ -156,6 +156,9 @@ brew install cocoapods
 brew install fastlane
 brew install openjdk@17
 brew install --cask android-studio
+echo "export ANDROID_HOME=$HOME/Library/Android/sdk" >> ~/.zshrc
+echo "export ANDROID_SDK_HOME=$HOME/Library/Android/sdk" >> ~/.zshrc
+echo "export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH" >> ~/.zshrc
 
 #Configurations
 # echo "prompt_context() {
@@ -182,5 +185,5 @@ softwareupdate --install-rosetta
 
 # Shell
 echo "export JAVA_HOME=/opt/homebrew/opt/openjdk@17" >> ~/.zshrc
-echo "export PATH=$JAVA_HOME/bin:$HOME/Library/Android/sdk/platform-tools:$PATH" >> ~/.zshrc
+echo "export PATH=$JAVA_HOME/bin:$PATH" >> ~/.zshrc
 echo "setopt HIST_IGNORE_SPACE" >> ~/.zshrc
