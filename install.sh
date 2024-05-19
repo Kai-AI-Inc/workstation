@@ -99,6 +99,7 @@ brew install --cask postman
 brew install --cask ngrok
 install datagrip --cask
 install github --cask
+brew install --cask chatgpt
 
 # Cloud CLIs
 brew tap heroku/brew && brew install heroku
