@@ -187,3 +187,6 @@ softwareupdate --install-rosetta
 echo "export JAVA_HOME=/opt/homebrew/opt/openjdk@17" >> ~/.zshrc
 echo "export PATH=$JAVA_HOME/bin:$PATH" >> ~/.zshrc
 echo "setopt HIST_IGNORE_SPACE" >> ~/.zshrc
+
+# Yarn modern
+echo "export KAI_PACKAGES_TOKEN=${GITHUB_PACKAGES_TOKEN}"
