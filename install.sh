@@ -190,3 +190,8 @@ echo "setopt HIST_IGNORE_SPACE" >> ~/.zshrc
 
 # Yarn modern
 echo "export KAI_PACKAGES_TOKEN=${GITHUB_PACKAGES_TOKEN}"
+
+echo "# Set default Node version
+nvm use
+" >> ~/.zshrc
+
